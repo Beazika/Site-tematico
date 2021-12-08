@@ -1,0 +1,187 @@
+
+
+:root {
+  --cordoheaderprincipal: #1a1f1c;
+  --corheader2: #133b21;
+  --cordobody: #aaaaaa;
+  --textlogo: 'Alfa Slab One', cursive;
+  --textcolor: #00ffc3;
+}
+.firstheader {
+  height: 7vh;
+  background-color: var(--cordoheaderprincipal);
+}
+.logo {
+  font-family: var(--textlogo);
+  color: var(--textcolor);
+  padding-left: 13vw;
+  margin-top: 0.6vh;
+  font-size: 30px;
+  position: relative;
+}
+.logoTextMenu {
+  font-family: var(--textlogo);
+  color: var(--textcolor);
+  font-size: 30px;
+  text-decoration: none;
+}
+.logoTextMenu:hover {
+  color: aliceblue;
+}
+.ptitle {
+  font-size: 30px;
+  font-family: var();
+}
+.p {
+  font-size: 20px;
+  font-family: var();
+}
+.secondheader {
+  height: 8vh;
+  background-color: var(--corheader2);
+}
+.img {
+  position: absolute;
+  height: 10vh;
+  width: 12vw;
+}
+.textA {
+  padding-top: 0.8vh;
+  color: white;
+  font-family: roboto;
+  font-size: 17px;
+  text-decoration: none;
+}
+.textPMenu {
+  color: white;
+  font-family: roboto;
+  font-size: 17px;
+  text-decoration: none;
+}
+.textA:hover {
+  color: var(--cordoheaderprincipal);
+}
+.menu {
+  height: 89vh;
+  background-color: var(--cordoheaderprincipal);
+}
+
+.bacground{
+  background-image: url(img/campo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  padding: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.isso p{
+  color: white;
+  text-align: center;
+  font-size: 40px;
+  font-family: "Roboto", sans-serif;
+}
+
+.isso a{
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 30px;
+  border-radius: 40px;
+  background: white;
+  color: #2b1055;
+  font-size: 16px;
+  z-index: 9;
+  transform: translateY(100px);
+
+}
+
+.isso a:hover{
+  background-color: #133b21;
+  color: white;
+  transition: 0.5s;
+}
+
+#Areas{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#Areas div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-top: 30px;
+  color: #FFFFFF;
+  margin-bottom: 150px;
+  flex-grow: 1;
+  flex-basis: 150px;
+  padding: 0 10px;
+}
+
+#Areas div li{
+  list-style: none;
+  text-decoration: none;
+}
+
+#Areas div li a {
+  font-size: 1.5em;
+  padding: 6px 15px;
+  color: black;
+  transition: 0.5s;
+  text-decoration: none;
+}
+
+#Areas div img{
+  border-radius: 50px;
+  max-width:140px;
+  max-height:90px;
+  width: auto;
+  height: auto;
+}
+
+footer{
+  background-color: #133b21;
+  padding: 20px;
+}
+
+footer p{
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+@media (max-width: 768px) {
+  .img {
+    position: absolute;
+    height: 12vh;
+    width: 30vw;
+  }
+  .logo {
+    font-family: var(--textlogo);
+    color: var(--textcolor);
+    padding-left: 30vw;
+    margin-top: 1vh;
+    font-size: 30px;
+    position: relative;
+  }
+  .textA {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+  
+}

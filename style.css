@@ -1,0 +1,211 @@
+:root {
+  --cordoheaderprincipal: #1a1f1c;
+  --corheader2: #133b21;
+  --cordobody: #aaaaaa;
+  --textlogo: 'Alfa Slab One', cursive;
+  --textcolor: #00ffc3;
+}
+.firstheader {
+  height: 6vh;
+  background-color: var(--cordoheaderprincipal);
+}
+.firstheaderpagenav {
+  height: 11vh;
+  background-color: var(--cordoheaderprincipal);
+}
+.logo {
+  font-family: var(--textlogo);
+  color: var(--textcolor);
+  padding-left: 13vw;
+  margin-top: 0.6vh;
+  font-size: 30px;
+  position: relative;
+}
+.logoTextMenu {
+  font-family: var(--textlogo);
+  color: var(--textcolor);
+  font-size: 30px;
+  text-decoration: none;
+}
+.logoTextMenu:hover {
+  color: aliceblue;
+}
+.ptitle {
+  font-size: 30px;
+  font-family: var();
+}
+.p {
+  font-size: 20px;
+  font-family: var();
+}
+.secondheader {
+  height: 5vh;
+  background-color: var(--corheader2);
+}
+.img {
+  position: absolute;
+  height: 10vh;
+  width: 12vw;
+}
+.textA {
+  padding-top: 0.8vh;
+  color: white;
+  font-family: roboto;
+  font-size: 17px;
+  text-decoration: none;
+}
+.textPMenu {
+  color: white;
+  font-family: roboto;
+  font-size: 17px;
+  text-decoration: none;
+}
+.textA:hover {
+  color: var(--cordoheaderprincipal);
+}
+.menu {
+  height: 89vh;
+  background-color: var(--cordoheaderprincipal);
+}
+.menuespecial {
+  height: 150vh;
+  background-color: var(--cordoheaderprincipal);
+}
+.bodypage {
+  height: 89vh;
+  background-color: var(--cordobody);
+}
+.bodypageespecial {
+  height: 150vh;
+  background-color: var(--cordobody);
+}
+
+.slider{
+  margin-left: 20%;
+  margin-top: 15vh;
+  width: 800px;
+  height: 500px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.slides{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slides input{
+  display: none;
+}
+
+.slide{
+  width: 20%;
+  transition: 2s;
+}
+
+.slide img{
+  width: 800px;
+  height: 500px;
+}
+
+/*css for manual slide navigation*/
+
+.navigation-manual{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.manual-btn{
+  border: 2px solid #133b21;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+}
+
+.manual-btn:not(:last-child){
+  margin-right: 40px;
+}
+
+.manual-btn:hover{
+  background: #133b21;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.navigation-auto{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+}
+
+.navigation-auto div{
+  border: 2px solid #133b21;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.navigation-auto div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+  background: #133b21;
+}
+
+#radio2:checked ~ .navigation-auto .auto-btn2{
+  background: #133b21;
+}
+
+#radio3:checked ~ .navigation-auto .auto-btn3{
+  background: #133b21;
+}
+
+#radio4:checked ~ .navigation-auto .auto-btn4{
+  background: #133b21;
+}
+
+@media (max-width: 768px) {
+  .img {
+    position: absolute;
+    height: 12vh;
+    width: 30vw;
+  }
+  .logo {
+    font-family: var(--textlogo);
+    color: var(--textcolor);
+    padding-left: 30vw;
+    margin-top: 1vh;
+    font-size: 30px;
+    position: relative;
+  }
+  .textA {
+    display: none;
+  }
+  .menu {
+    display: none;
+  }
+}
